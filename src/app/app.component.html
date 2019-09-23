@@ -1,0 +1,9 @@
+
+<nav class="navbar navbar-dark bg-primary">
+        <a *ngIf="isAuthorized" class="navbar-brand" (click)="logout()">LogOut</a>
+        <a *ngIf="!isAuthorized" class="navbar-brand" (click)="login()">LogIn</a>
+        <span *ngIf="currentUser">
+                hi {{currentUser.firstName}}  {{currentUser.lastName}}  
+        </span>   
+</nav>
+<router-outlet></router-outlet> 

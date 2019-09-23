@@ -1,0 +1,18 @@
+export interface User {
+  userId: number,
+  roleId: number,
+  firstName: string,
+  lastName: string,
+  userName: string,
+  avatarURL: string,
+  accountId: number,
+  accountName: string,
+  title_Position: string,
+  email: string,
+  address: string,
+  city: string,
+  state: string,
+  country: string,
+  zip: string,
+  phone: string,
+}

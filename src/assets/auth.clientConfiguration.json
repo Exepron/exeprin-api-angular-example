@@ -1,0 +1,18 @@
+{
+  "stsServer": "https://proid.exepron.com/",
+  "redirect_url": "http://127.0.0.1:4200",
+  "client_id": "{client_id}",
+  "response_type": "id_token token",
+  "scope": "openid profile exepron.restapi",
+  "post_logout_redirect_uri": "http://127.0.0.1:4200",
+  "start_checksession": true,
+  "silent_renew": true,
+  "silent_renew_url": "https://127.0.0.1:4200/silent-renew.html",
+  "startup_route": "/",
+  "forbidden_route": "/",
+  "unauthorized_route": "/",
+  "log_console_warning_active": false,
+  "log_console_debug_active": false,
+  "max_id_token_iat_offset_allowed_in_seconds": "300",
+  "apiServer": "https://api.exepron.com/v1/Accounts"
+}
