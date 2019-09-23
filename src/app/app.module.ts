@@ -65,7 +65,7 @@ export class AppModule {
         post_logout_redirect_uri: configResult.customConfig.post_logout_redirect_uri,
         start_checksession: configResult.customConfig.start_checksession,
         silent_renew: configResult.customConfig.silent_renew,
-        silent_renew_url: configResult.silent_renew_url,
+        silent_renew_url: configResult.customConfig.silent_renew_url,
         post_login_route: configResult.customConfig.startup_route,
         forbidden_route: configResult.customConfig.forbidden_route,
         unauthorized_route: configResult.customConfig.unauthorized_route,
@@ -73,7 +73,9 @@ export class AppModule {
         log_console_debug_active: configResult.customConfig.log_console_debug_active,
         max_id_token_iat_offset_allowed_in_seconds:
         configResult.customConfig.max_id_token_iat_offset_allowed_in_seconds,
+
       };
+        configuration.ApiServer = configResult.customConfig.apiServer;
         this.oidcSecurityService.setupModule(config, configResult.authWellknownEndpoints);
     });
     console.log('APP STARTING');

@@ -1,9 +1,9 @@
-
+<h1 *ngIf="currentUser">
+  Welcome {{currentUser.firstName}}  {{currentUser.lastName}}
+</h1>
 <nav class="navbar navbar-dark bg-primary">
-        <a *ngIf="isAuthorized" class="navbar-brand" (click)="logout()">LogOut</a>
-        <a *ngIf="!isAuthorized" class="navbar-brand" (click)="login()">LogIn</a>
-        <span *ngIf="currentUser">
-                hi {{currentUser.firstName}}  {{currentUser.lastName}}  
-        </span>   
+        <button *ngIf="isAuthorized" class="navbar-brand" (click)="logout()">LogOut</button>
+        <button *ngIf="!isAuthorized" class="navbar-brand" (click)="login()">LogIn</button>
+
 </nav>
-<router-outlet></router-outlet> 
+<router-outlet></router-outlet>
