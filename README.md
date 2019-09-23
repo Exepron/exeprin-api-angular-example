@@ -1,2 +1,2 @@
-# exeprin-api-angular-example
+# exepron-api-angular-example
 This is an example of how to use the Exepron API with Angular 2+
